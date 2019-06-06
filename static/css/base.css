@@ -1,0 +1,16 @@
+h2 {
+  color: #E63A36;
+  text-align: center;
+}
+
+.container {
+  padding-left: 100px;
+  margin-bottom: 12px;
+  color: orange;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

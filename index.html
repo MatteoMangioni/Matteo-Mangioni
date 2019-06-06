@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="static/css/base.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script src="static/js/fillTable.js"></script>
+  </head>
+<body>
+  <div id="app">
+    <h2>Matteo Mangioni, 06/06/2019: Fetch Punk API</h2>
+    <div class="row">
+    <div class="col-sm-12">
+      <label class="container">Click to Filter for ABV > 7
+        <input type="checkbox" id="abvg7" onchange="filterAbvg7Beers()">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+  </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Beer Name</th>
+          <th scope="col">Malt Type</th>
+          <th scope="col">Alcohol Percentage</th>
+        </tr>
+      </thead>
+      <tbody id = "table_body">
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
